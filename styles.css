@@ -1,0 +1,294 @@
+button:focus{
+  outline: 0;
+}
+
+
+@import url("variables.css");
+
+body{
+  box-sizing: border-box;
+}
+/* navigation area */
+
+
+.navbar-brand{
+  display: inline-block;
+  padding: 0.2rem 10rem 0.2rem 0;
+
+  font-family: var(--roboto);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.navbar{
+  background-color:  #c02739;
+  padding: 1rem 13rem;
+}
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.8rem;
+}
+
+.active{
+  background:var(--gradient-color);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip: text;
+}
+.nav-link:hover{
+  background:var(--gradient-color);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip: text;
+}
+/* main area css */
+#title-area{
+
+  position: relative;
+
+
+  background-position: center;
+  padding-bottom: 130px;
+
+}
+#particles-js{
+
+  position: absolute;
+    width: 100%;
+    height: 45rem;
+    background-image: url("images/title-background2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    background-position: center;
+
+  }
+
+.title-button{
+  padding:7px 20px;
+  transition: background .6s ease;
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-clip: padding-box;
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+.title-div{
+  padding:6rem 0 0 5rem;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.title-h3{
+  padding-top: 150px;
+  color: black;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.line::after{
+  content: "";
+  height: 3px;
+  width: 20vh;
+  background: red;
+  display:block;
+  transform: translateY(-38px);
+}
+.line-1::after{
+  content: "";
+  height: 3px;
+  width: 20vh;
+  background: #333333;
+  display:block;
+  transform: translateY(-40px);
+}
+
+.title-h5{
+  font-weight: 400;
+  word-spacing: 8px;
+  padding-top: 30px;
+  color: #f4f3f3;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+.logo-image{
+  padding:7rem 0 0 4rem;
+  filter: blur(2px);
+}
+
+/* ===========================about us==================== */
+
+#about-us{
+  padding-bottom: 3rem;
+  background-color: #c02739;
+}
+#about-us h2::after{
+  content: "";
+  height: 5px;
+  width: 20vh;
+  background: #333333;
+  display:block;
+
+  padding: 0;
+}
+.about-h2{
+  letter-spacing: 3px;
+  font-family: 'Righteous', cursive;
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 90px 0 50px;
+}
+.about-col h3{
+  letter-spacing: 3px;
+  font-size: 2rem;
+  color: #c02739;
+  padding: 30px 0 50px;
+  font-family: 'Righteous', cursive;
+  font-weight: 700;
+  }
+.about-col p{
+  font-size: 16px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 30px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  padding-right: 2rem;
+}
+.about-row{
+  border-radius: 20px;
+  padding: 5rem 3rem 6rem;
+  background-color: black;
+  box-shadow:5px 10px 10px black;
+}
+.parallax-window {
+    min-height: 300px;
+    background: transparent;
+}
+
+/* =======about us end ========= */
+
+/* ===========tracks start============ */
+#tracks{
+  background-color: black;
+}
+.tracks-container{
+
+}
+#tracks h3{
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #c02739;
+  text-align: center;
+  padding: 9rem 0 1rem;
+  font-weight: 600;
+}
+.tracks-main-h2{
+  letter-spacing: 3px;
+  font-size: 3.5rem;
+  padding: 5rem 0 0;
+  font-family: 'Righteous', cursive;
+ color: #c02739;
+}
+.tracks-main-h2::after{
+  content: "";
+  height: 3px;
+  width: 20vh;
+  background: #c02739;
+  display:block;
+
+  padding: 0;
+}
+.carousel-inner{
+  background-color: #333333;
+  border-radius: 20px;
+}
+.carousel-control-prev-icon{
+  color: black;
+}
+.carousel-item{
+    text-align: center;
+    padding: 2rem 0 5rem;
+  }
+.carousel-item img{
+    border-radius: 20px;
+      background-color: #c02739;
+      padding: 20px 50px;
+      box-shadow:5px 10px 10px black;
+  }
+img{
+  cursor: pointer;
+}
+.modal-body{
+  background-color: #333333;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+.modal-header{
+  background-color: #c02739;
+  border:0;
+  padding: 2rem 2rem 2rem 2rem;
+
+}
+.modal-header h5{
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+  color: black;
+}
+.modal-header button{
+  font-size: 50px;
+  color:black;
+}
+
+
+/* =======================tracks end============ */
+
+/* about us end */
+
+@media(max-width:600px){
+  .navbar{
+    margin: 0;
+    padding:25px 0 ;
+    background-color: #c02739;
+    color: black;
+  }
+  .logo-image{
+    display: none;
+  }
+  .title-h3{
+    text-align: center;
+
+  }
+  .title-h5{
+    text-align: center;
+  }
+  .title-button-div{
+    text-align: center;
+  }
+  .about-h2{
+    text-align: center;
+  }
+  .about-col h3,p{
+    text-align:center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #tracks h3{
+    padding: 6rem 2rem 1rem;
+  }
+  .line::after{
+    display: none;
+  }
+  #about-us h2::after{
+    display: none;
+  }
+  .tracks-main-h2::after{
+    display: none;
+  }
+}
